@@ -7,7 +7,9 @@ const Index = () => {
   return (
     <HeaderWrapper>
       <CenterLayout width={"80%"}>
-        <h1>Corona Indonesia</h1>
+        <h1>
+          <strong>Corona</strong> Indonesia
+        </h1>
       </CenterLayout>
     </HeaderWrapper>
   );

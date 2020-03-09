@@ -12,10 +12,19 @@ export const DescriptionWrapper = styled.div`
     font-weight: bold;
   }
   .ant-tabs-ink-bar {
-    background-color: rgba(0, 0, 0, 0.84);
+    background-color: var(--primary);
   }
-  .ant-tabs {
-    font-size: 19px;
+  .ant-tabs-tabpane {
+    font-size: 16px;
+    line-height: 150%;
     text-align: justify;
+  }
+  strong {
+    font-weight: 700;
+    color: var(--primary);
+    /* font-family: serif; */
+  }
+  p {
+    font-family: sans-serif;
   }
 `;

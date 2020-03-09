@@ -11,10 +11,10 @@ const Index = props => {
         <TabPane tab="Apa itu COVID-19 ?" key="1">
           <p>
             <strong>Virus Corona atau 2019 Novel Coronavirus</strong>
-            <br /> adalah virus yang menyerang sistem pernapasan. Penyakit
-            karena infeksi virus ini disebut COVID-19. Virus Corona bisa
-            menyebabkan gangguan pada sistem pernapasan, pneumonia akut, sampai
-            kematian.
+            <br />
+            adalah virus yang menyerang sistem pernapasan. Penyakit karena
+            infeksi virus ini disebut COVID-19. Virus Corona bisa menyebabkan
+            gangguan pada sistem pernapasan, pneumonia akut, sampai kematian.
           </p>
         </TabPane>
         <TabPane tab="Gejala" key="2">
@@ -73,7 +73,6 @@ const Index = props => {
           </ul>
         </TabPane>
       </Tabs>
-      ,
     </DescriptionWrapper>
   );
 };

@@ -11,6 +11,8 @@ export { default as Card } from "./card";
 export { default as Link } from "./link";
 export { default as Footer } from "./footer";
 export { default as Table } from "./table";
+export { default as Case } from "./case";
+export { default as CaseCard } from "./caseCard";
 export {
   InputForm,
   InputPassword,

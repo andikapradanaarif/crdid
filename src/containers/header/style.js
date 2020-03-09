@@ -12,7 +12,7 @@ export const HeaderWrapper = styled.div`
   }
 
   .component_content {
-    margin-top: 20px;
+    padding-top: 90px;
     font-family: serif;
     font-size: 21px;
     line-height: 1.58;
