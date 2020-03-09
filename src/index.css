@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: Heebo;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: Heebo, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
