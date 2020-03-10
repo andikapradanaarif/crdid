@@ -5,7 +5,7 @@ import data from "../../datasets/patient";
 import { TimeFormatter } from "../../utils/timeParser";
 
 const Index = props => {
-  const genders = ["-", "Female", "Male"];
+  const genders = ["-", "Wanita", "Pria"];
   const columns = [
     {
       title: "No",
@@ -13,14 +13,7 @@ const Index = props => {
       key: "id"
     },
     {
-      title: "City",
-      dataIndex: "city",
-      sorter: (a, b) => a.time - b.time,
-      key: "city",
-      sortDirections: ["descend"]
-    },
-    {
-      title: "Date",
+      title: "Tanggal",
       dataIndex: "date",
       sorter: (a, b) => a.time - b.time,
       key: "date",
@@ -28,21 +21,29 @@ const Index = props => {
         const timeFormatted = TimeFormatter(text);
         return `${timeFormatted.dayName}, ${timeFormatted.date} ${timeFormatted.monthName} ${timeFormatted.year}`;
       },
+      width: 200,
       sortDirections: ["descend"]
     },
     {
-      title: "Sex",
+      title: "Usia",
+      dataIndex: "age",
+      key: "age"
+    },
+    {
+      title: "Gender",
       dataIndex: "sex",
       key: "sex",
       render: text => genders[text]
     },
     {
-      title: "Age",
-      dataIndex: "age",
-      key: "age"
+      title: "Kota",
+      dataIndex: "city",
+      sorter: (a, b) => a.time - b.time,
+      key: "city",
+      sortDirections: ["descend"]
     },
     {
-      title: "Source",
+      title: "Sumber",
       dataIndex: "url",
       key: "url",
       render: text => {
