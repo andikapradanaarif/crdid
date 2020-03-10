@@ -19,8 +19,9 @@ const logNews = [
     date: "2020-03-06T17:00:00.000Z",
     activity: [
       {
-        title:
-          "positif corona bertambah menjadi 4 kasus, kasus 3 dan 4 masih memiliki hubungan dengan kasus 1 dan 2",
+        title: "positif corona bertambah menjadi 4 kasus",
+        desc:
+          "Pasien ke 3 dan 4 masih memiliki hubungan dengan kasus 1 dan 2. Mereka meminta untuk tidak dibuka profilenya ke publik",
         url:
           "https://news.detik.com/berita/d-4931203/pasien-kasus-3-dan-4-corona-minta-tak-diumbar-identitasnya"
       }
