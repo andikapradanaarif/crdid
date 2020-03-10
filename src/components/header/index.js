@@ -6,9 +6,9 @@ import { CenterLayout } from "../";
 const Index = () => {
   return (
     <HeaderWrapper>
-      <CenterLayout width={"80%"}>
+      <CenterLayout>
         <h1>
-          <strong>Corona</strong> Indonesia
+          Info<strong>Corona</strong> Indonesia
         </h1>
       </CenterLayout>
     </HeaderWrapper>

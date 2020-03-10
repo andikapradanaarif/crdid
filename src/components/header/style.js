@@ -1,20 +1,21 @@
 import styled from "styled-components";
 
 export const HeaderWrapper = styled.div`
-  background-color: var(--white);
+  background-color: var(--primary);
   font-weight: bold;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px 0px;
-  padding: 10px 0;
-  position: fixed;
+  padding: 5px 0px;
+  padding-top: 15px;
   width: 100%;
   z-index: 10;
-
   h1 {
-    border-left: 2px solid #292929;
-    padding-left: 20px;
+    font-size: 18px;
+    border-left: 2px solid var(--white);
+    padding-left: 8px;
+    color: var(--white);
   }
 
   strong {
-    color: var(--primary);
+    color: var(--white);
   }
 `;

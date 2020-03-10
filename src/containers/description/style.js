@@ -1,30 +1,23 @@
 import styled from "styled-components";
 
 export const DescriptionWrapper = styled.div`
-  .ant-tabs-nav .ant-tabs-tab:hover,
-  .ant-tabs-nav .ant-tabs-tab-active {
-    color: rgba(0, 0, 0, 0.84);
-  }
-  .ant-tabs-nav {
-    font-size: 18px;
-  }
-  .ant-tabs-nav .ant-tabs-tab-active {
-    font-weight: bold;
-  }
-  .ant-tabs-ink-bar {
-    background-color: var(--primary);
-  }
-  .ant-tabs-tabpane {
-    font-size: 16px;
-    line-height: 150%;
-    text-align: justify;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 20px 25px;
+  box-shadow: 0px 0px 13px 0px rgba(236, 236, 241, 0.44);
+
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
   }
   strong {
+    font-size: 16px;
     font-weight: 700;
     color: var(--primary);
     /* font-family: serif; */
   }
   p {
-    font-family: sans-serif;
+    color: var(--black);
   }
 `;
