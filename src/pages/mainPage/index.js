@@ -15,9 +15,9 @@ function index() {
       <CenterLayout>
         <Description />
         {/* <Cases /> */}
+        <News />
         <Summary />
         <LatestUpdate />
-        <News />
       </CenterLayout>
       <FreeSpace />
     </React.Fragment>

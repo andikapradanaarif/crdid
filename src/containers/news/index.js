@@ -13,7 +13,7 @@ const Index = props => {
       return (
         <li key={i}>
           <a href={item.url} target="_blank" rel="noopener noreferrer">
-            <strong className="container_title">{item.summary}</strong>
+            <strong className="container_title">{item.title}</strong>
           </a>
         </li>
       );
