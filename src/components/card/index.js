@@ -1,6 +1,5 @@
 import React from "react";
 import { CardWrapper } from "./card.style";
-import { Card } from "antd";
 import { Wrapper } from "../";
 
 const Index = props => {

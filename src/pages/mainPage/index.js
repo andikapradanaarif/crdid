@@ -4,7 +4,8 @@ import {
   Cases,
   Summary,
   LatestUpdate,
-  News
+  News,
+  GrowthCases
 } from "../../containers";
 import { CenterLayout, Header, FreeSpace } from "../../components";
 
@@ -17,6 +18,7 @@ function index() {
         <Cases />
         <News />
         <Summary />
+        <GrowthCases />
         <LatestUpdate />
       </CenterLayout>
       <FreeSpace />

@@ -66,8 +66,6 @@ const Index = props => {
           size={"small"}
           rowKey={record => record.id}
         />
-        <Text.Header>Pertumbuhan Kasus</Text.Header>
-        <div className="container_summary_growth"></div>
       </Wrapper>
     </SummaryWrapper>
   );
