@@ -175,3 +175,5 @@ const patient = [
       "https://www.cnnindonesia.com/nasional/20200309172719-20-481849/pasien-positif-corona-di-indonesia-bertambah-jadi-19-orang"
   }
 ];
+
+export default patient;

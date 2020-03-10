@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const TableWrapper = styled.div`
   .ant-table-pagination {
@@ -36,5 +36,8 @@ export const TableWrapper = styled.div`
 
   .ant-table-pagination.ant-pagination {
     margin-left: auto;
+  }
+  .ant-table-content {
+    overflow: scroll;
   }
 `;

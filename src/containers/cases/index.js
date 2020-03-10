@@ -1,6 +1,6 @@
 import React from "react";
 import { CasesWrapper } from "./style";
-import { Case, CaseCard } from "../../components";
+import { Case, CaseCard, Chart } from "../../components";
 
 const Index = props => {
   return (
@@ -15,16 +15,31 @@ const Index = props => {
         />
       </div>
       <div className={"container_card_row"}>
-        <CaseCard
-          title={" Active Cases "}
-          highlightedAmount={1000}
-          highlightedDescription={"Currently Infected Patients"}
-        />
-        <CaseCard
-          title={" Active Cases "}
-          highlightedAmount={1000}
-          highlightedDescription={"Currently Infected Patients"}
-        />
+        <div>
+          <CaseCard
+            isActive={true}
+            title={" Active Cases "}
+            highlightedAmount={1000}
+            highlightedDescription={"Currently Infected Patients"}
+            leftHighlightedAmount={41444}
+            leftHighlightedDescription={"in Mild Condition"}
+            rightHighlightedAmount={6042}
+            rightHighlightedDescription={"Serious or Critical"}
+          />
+          <Chart title={" Total Cases "} />
+        </div>
+        <div>
+          <CaseCard
+            title={" Closed Cases "}
+            highlightedAmount={1000}
+            highlightedDescription={"Currently Infected Patients"}
+            leftHighlightedAmount={41444}
+            leftHighlightedDescription={"in Mild Condition"}
+            rightHighlightedAmount={6042}
+            rightHighlightedDescription={"Serious or Critical"}
+          />
+          <Chart title={" Total Deaths "} />
+        </div>
       </div>
     </CasesWrapper>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Description, Cases } from "../../containers";
+import { Header, Description, Cases, Summary } from "../../containers";
 import { FreeSpace } from "../../components";
 
 function index(props) {
@@ -8,6 +8,7 @@ function index(props) {
       <Header>
         <Description />
         <Cases />
+        <Summary />
         <FreeSpace />
       </Header>
     </React.Fragment>
