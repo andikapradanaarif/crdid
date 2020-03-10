@@ -20,3 +20,5 @@ const logCase = [
     close: 0
   }
 ];
+
+export default logCase;

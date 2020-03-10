@@ -1,5 +1,12 @@
 import React from "react";
-import { Header, Description, Cases, Summary } from "../../containers";
+import {
+  Header,
+  Description,
+  Cases,
+  Summary,
+  LatestUpdate,
+  News
+} from "../../containers";
 import { FreeSpace } from "../../components";
 
 function index(props) {
@@ -9,6 +16,8 @@ function index(props) {
         <Description />
         <Cases />
         <Summary />
+        <LatestUpdate />
+        <News />
         <FreeSpace />
       </Header>
     </React.Fragment>

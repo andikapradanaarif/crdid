@@ -44,3 +44,5 @@ const logNews = [
     ]
   }
 ];
+
+export default logNews;
