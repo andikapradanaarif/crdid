@@ -48,6 +48,21 @@ const logNews = [
           "https://www.cnbcindonesia.com/news/20200309180128-4-143561/13-pasien-positif-corona-dirawat-di-jakarta-di-luar-jakarta"
       }
     ]
+  },
+  {
+    date: "2020-03-10T15:54:35.205Z",
+    activity: [
+      {
+        title: "positif corona bertambah menjadi 27 kasus",
+        url:
+          "https://www.cnbcindonesia.com/news/20200309180128-4-143561/13-pasien-positif-corona-dirawat-di-jakarta-di-luar-jakarta"
+      },
+      {
+        title: "Pemerintah soal WNI Corona di Singapura: Biar Dirawat di Sana",
+        url:
+          "https://www.cnnindonesia.com/nasional/20200310185956-20-482247/pemerintah-soal-wni-corona-di-singapura-biar-dirawat-di-sana"
+      }
+    ]
   }
 ];
 
