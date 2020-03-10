@@ -1,6 +1,6 @@
 import React from "react";
 import { LatestUpdateWrapper } from "./style";
-import { Text } from "../../components";
+import { Text, Wrapper } from "../../components";
 import { Timeline } from "antd";
 import data from "../../datasets/logCase";
 import { TimeFormatter } from "../../utils/timeParser";
@@ -23,10 +23,12 @@ const Index = props => {
   });
   return (
     <LatestUpdateWrapper>
-      <Text.Header>Latest Update</Text.Header>
-      <div className="container_timeline">
-        <Timeline mode="alternate">{timeLineItemsRendered}</Timeline>
-      </div>
+      <Wrapper>
+        <Text.Header>Latest Update</Text.Header>
+        <div className="container_timeline">
+          <Timeline mode="alternate">{timeLineItemsRendered}</Timeline>
+        </div>
+      </Wrapper>
     </LatestUpdateWrapper>
   );
 };

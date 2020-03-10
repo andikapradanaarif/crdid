@@ -14,6 +14,7 @@ const Index = props => {
     },
     {
       title: "Tanggal",
+      width: 200,
       dataIndex: "date",
       sorter: (a, b) => a.time - b.time,
       key: "date",
@@ -21,7 +22,6 @@ const Index = props => {
         const timeFormatted = TimeFormatter(text);
         return `${timeFormatted.dayName}, ${timeFormatted.date} ${timeFormatted.monthName} ${timeFormatted.year}`;
       },
-      width: 200,
       sortDirections: ["descend"]
     },
     {
@@ -62,9 +62,9 @@ const Index = props => {
         <Table
           columns={columns}
           dataSource={data}
-          scroll={{ xScroll: 400 }}
-          size={"small"}
           rowKey={record => record.id}
+          scroll={{ x: "max-content" }}
+
           // pagination={false}
         />
       </Wrapper>

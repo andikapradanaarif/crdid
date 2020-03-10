@@ -6,7 +6,7 @@ import {
   LatestUpdate,
   News
 } from "../../containers";
-import { CenterLayout, Header, FreeSpace } from "../../components";
+import { CenterLayout, Header, FreeSpace, Footer } from "../../components";
 
 function index() {
   return (
@@ -17,9 +17,10 @@ function index() {
         <Cases />
         <News />
         <Summary />
-        <LatestUpdate />
+        {/* <LatestUpdate /> */}
       </CenterLayout>
       <FreeSpace />
+      <Footer />
     </React.Fragment>
   );
 }

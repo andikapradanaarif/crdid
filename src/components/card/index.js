@@ -1,6 +1,6 @@
 import React from "react";
 import { CardWrapper } from "./card.style";
-import { Card } from "antd";
+import { threeDigit } from "../../utils/converter";
 import { Wrapper } from "../";
 
 const Index = props => {
@@ -8,7 +8,7 @@ const Index = props => {
   return (
     <CardWrapper className={props.className}>
       <Wrapper className="component_card_wrapper">
-        <h1>{number}</h1>
+        <h1>{threeDigit(number)}</h1>
         <h2>{title}</h2>
       </Wrapper>
     </CardWrapper>
