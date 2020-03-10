@@ -1,6 +1,6 @@
 import React from "react";
 import { FooterWrapper } from "./style";
-import { CenterLayout, Button } from "../";
+import { CenterLayout } from "../";
 // import { Button } from '../';
 
 const Index = props => {
