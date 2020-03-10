@@ -14,7 +14,7 @@ function index() {
       <Header />
       <CenterLayout>
         <Description />
-        {/* <Cases /> */}
+        <Cases />
         <News />
         <Summary />
         <LatestUpdate />

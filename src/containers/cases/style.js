@@ -2,21 +2,14 @@ import styled from "styled-components";
 
 export const CasesWrapper = styled.div`
   margin-top: 30px;
-  .container_deaths .component_amount {
-    color: #696969;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
   }
-  .container_recovered .component_amount {
-    color: var(--primary);
-  }
-  .container_row {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-  }
-  .container_card_row {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  @media (max-width: 640px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 `;
