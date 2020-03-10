@@ -35,36 +35,40 @@ const Index = () => {
       </p>
 
       <h3>Cara Pencegahan</h3>
-      <ul>
-        <li>
-          Hindari bepergian ke Cina atau ke negara lain yang telah ditemukan
-          adanya penularan virus Corona.
-        </li>
-        <li>
-          Gunakan masker saat beraktivitas di luar ruangan, terutama di tempat
-          umum atau keramaian.
-        </li>
-        <li>
-          Rutin mencuci tangan dengan air dan sabun atau hand sanitizer yang
-          mengandung alkohol setelah beraktivitas di luar ruangan.
-        </li>
-        <li>
-          Hindari kontak dengan hewan, terutama hewan liar. Bila terjadi kontak
-          dengan hewan, cuci tangan setelahnya.
-        </li>
-        <li>Masak daging sampai benar-benar matang sebelum dikonsumsi.</li>
-        <li>
-          Tutup mulut dan hidung dengan tisu saat batuk atau bersin, kemudian
-          buang tisu ke tempat sampah.
-        </li>
-        <li>
-          Jangan menyentuh mata, mulut, dan hidung sebelum mencuci tangan.
-        </li>
-        <li>Hindari berdekatan dengan seseorang yang sedang sakit.</li>
-        <li>
-          Jaga kebersihan benda yang sering disentuh dan kebersihan lingkungan.
-        </li>
-      </ul>
+
+      <p>
+        <ul>
+          <li>
+            Hindari bepergian kenegara yang telah ditemukan adanya penularan
+            virus Corona.
+          </li>
+          <li>
+            Gunakan masker saat beraktivitas di luar ruangan, terutama di tempat
+            umum atau keramaian.
+          </li>
+          <li>
+            Rutin mencuci tangan dengan air dan sabun atau hand sanitizer yang
+            mengandung alkohol setelah beraktivitas di luar ruangan.
+          </li>
+          <li>
+            Hindari kontak dengan hewan, terutama hewan liar. Bila terjadi
+            kontak dengan hewan, cuci tangan setelahnya.
+          </li>
+          <li>Masak daging sampai benar-benar matang sebelum dikonsumsi.</li>
+          <li>
+            Tutup mulut dan hidung dengan tisu saat batuk atau bersin, kemudian
+            buang tisu ke tempat sampah.
+          </li>
+          <li>
+            Jangan menyentuh mata, mulut, dan hidung sebelum mencuci tangan.
+          </li>
+          <li>Hindari berdekatan dengan seseorang yang sedang sakit.</li>
+          <li>
+            Jaga kebersihan benda yang sering disentuh dan kebersihan
+            lingkungan.
+          </li>
+        </ul>
+      </p>
     </DescriptionWrapper>
   );
 };
