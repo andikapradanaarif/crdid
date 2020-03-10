@@ -1,23 +1,16 @@
 import React from "react";
 import { SummaryWrapper } from "./style";
-import { Table, Text } from "../../components";
+import { Table, Text, Wrapper } from "../../components";
 import data from "../../datasets/patient";
 import { TimeFormatter } from "../../utils/timeParser";
 
 const Index = props => {
-  const genders = ["-", "Female", "Male"];
+  const genders = ["-", "Wanita", "Pria"];
   const columns = [
     {
       title: "No",
       dataIndex: "id",
       key: "id"
-    },
-    {
-      title: "City",
-      dataIndex: "city",
-      sorter: (a, b) => a.time - b.time,
-      key: "city",
-      sortDirections: ["descend"]
     },
     {
       title: "Date",
@@ -28,7 +21,13 @@ const Index = props => {
         const timeFormatted = TimeFormatter(text);
         return `${timeFormatted.dayName}, ${timeFormatted.date} ${timeFormatted.monthName} ${timeFormatted.year}`;
       },
+      width: 200,
       sortDirections: ["descend"]
+    },
+    {
+      title: "Age",
+      dataIndex: "age",
+      key: "age"
     },
     {
       title: "Sex",
@@ -37,9 +36,11 @@ const Index = props => {
       render: text => genders[text]
     },
     {
-      title: "Age",
-      dataIndex: "age",
-      key: "age"
+      title: "City",
+      dataIndex: "city",
+      sorter: (a, b) => a.time - b.time,
+      key: "city",
+      sortDirections: ["descend"]
     },
     {
       title: "Source",
@@ -56,15 +57,18 @@ const Index = props => {
   ];
   return (
     <SummaryWrapper>
-      <Text.Header>Summary</Text.Header>
-      <Table
-        columns={columns}
-        dataSource={data}
-        scroll={{ xScroll: 400 }}
-        size={"small"}
-        rowKey={record => record.id}
-        // pagination={false}
-      />
+      <Wrapper>
+        <Text.Header>Summary</Text.Header>
+        <Table
+          columns={columns}
+          dataSource={data}
+          scroll={{ xScroll: 400 }}
+          size={"small"}
+          rowKey={record => record.id}
+        />
+        <Text.Header>Pertumbuhan Kasus</Text.Header>
+        <div className="container_summary_growth"></div>
+      </Wrapper>
     </SummaryWrapper>
   );
 };
