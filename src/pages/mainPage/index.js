@@ -1,25 +1,25 @@
 import React from "react";
 import {
-  Header,
   Description,
   Cases,
   Summary,
   LatestUpdate,
   News
 } from "../../containers";
-import { FreeSpace } from "../../components";
+import { CenterLayout, Header, FreeSpace } from "../../components";
 
-function index(props) {
+function index() {
   return (
     <React.Fragment>
-      <Header>
+      <Header />
+      <CenterLayout>
         <Description />
-        <Cases />
+        {/* <Cases /> */}
         <Summary />
         <LatestUpdate />
         <News />
-        <FreeSpace />
-      </Header>
+      </CenterLayout>
+      <FreeSpace />
     </React.Fragment>
   );
 }

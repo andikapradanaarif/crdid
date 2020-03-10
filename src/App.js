@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 import {
   Route,
   Switch,
   BrowserRouter as Router,
   Redirect
-} from 'react-router-dom';
-import routes from './config/routes';
-import { AuthenticationService } from './services';
-import { AppWrapper } from './App.style';
-import './config/color.css';
-import 'antd/dist/antd.css';
+} from "react-router-dom";
+import routes from "./config/routes";
+import { AuthenticationService } from "./services";
+import { AppWrapper } from "./App.style";
+import "./config/color.css";
+import "antd/dist/antd.css";
 
 function PrivateRoute({ component: Component, ...rest }) {
   return (
@@ -28,30 +28,28 @@ function PrivateRoute({ component: Component, ...rest }) {
 
 function App() {
   return (
-    <React.Fragment>
-      <AppWrapper>
-        <Router>
-          <Switch>
-            {routes.map((route, idx, props) =>
-              route.isPublic ? (
-                <Route
-                  path={route.path}
-                  component={route.component}
-                  key={idx}
-                  {...props}
-                />
-              ) : (
-                <PrivateRoute
-                  path={route.path}
-                  component={route.component}
-                  key={idx}
-                />
-              )
-            )}
-          </Switch>
-        </Router>
-      </AppWrapper>
-    </React.Fragment>
+    <AppWrapper>
+      <Router>
+        <Switch>
+          {routes.map((route, idx, props) =>
+            route.isPublic ? (
+              <Route
+                path={route.path}
+                component={route.component}
+                key={idx}
+                {...props}
+              />
+            ) : (
+              <PrivateRoute
+                path={route.path}
+                component={route.component}
+                key={idx}
+              />
+            )
+          )}
+        </Switch>
+      </Router>
+    </AppWrapper>
   );
 }
 
