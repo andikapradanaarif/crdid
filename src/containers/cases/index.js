@@ -2,8 +2,8 @@ import React from "react";
 import { CasesWrapper } from "./style";
 import { Card } from "../../components";
 import logCase from "../../datasets/logCase";
-const Index = props => {
-  console.log(logCase);
+
+const Index = () => {
   const totalCases = logCase.reduce((total, item) => {
     return total + item.newCase;
   }, 0);
@@ -14,6 +14,7 @@ const Index = props => {
     return total + item.death;
   }, 0);
   const activeCases = totalCases - totalDeath - totalRecover;
+
   return (
     <CasesWrapper>
       <Card title={"Total Kasus"} number={totalCases} />

@@ -62,6 +62,7 @@ const Index = props => {
         <Table
           columns={columns}
           dataSource={data}
+          size={"middle"}
           rowKey={record => record.id}
           scroll={{ x: "max-content" }}
 
