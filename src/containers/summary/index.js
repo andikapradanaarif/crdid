@@ -1,6 +1,6 @@
 import React from "react";
 import { SummaryWrapper } from "./style";
-import { Table, Text } from "../../components";
+import { Table, Text, Wrapper } from "../../components";
 import data from "../../datasets/patient";
 import { TimeFormatter } from "../../utils/timeParser";
 
@@ -56,15 +56,17 @@ const Index = props => {
   ];
   return (
     <SummaryWrapper>
-      <Text.Header>Summary</Text.Header>
-      <Table
-        columns={columns}
-        dataSource={data}
-        scroll={{ xScroll: 400 }}
-        size={"small"}
-        rowKey={record => record.id}
-        // pagination={false}
-      />
+      <Wrapper>
+        <Text.Header>Summary</Text.Header>
+        <Table
+          columns={columns}
+          dataSource={data}
+          scroll={{ xScroll: 400 }}
+          size={"small"}
+          rowKey={record => record.id}
+          // pagination={false}
+        />
+      </Wrapper>
     </SummaryWrapper>
   );
 };

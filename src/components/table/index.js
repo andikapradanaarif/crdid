@@ -1,6 +1,6 @@
-import React from 'react';
-import { TableWrapper } from './style';
-import { Table } from 'antd';
+import React from "react";
+import { TableWrapper } from "./style";
+import { Table } from "antd";
 
 const index = props => {
   return (

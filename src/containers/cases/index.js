@@ -1,14 +1,25 @@
 import React from "react";
 import { CasesWrapper } from "./style";
 import { Card } from "../../components";
-
+import logCase from "../../datasets/logCase";
 const Index = props => {
+  console.log(logCase);
+  const totalCases = logCase.reduce((total, item) => {
+    return total + item.newCase;
+  }, 0);
+  const totalRecover = logCase.reduce((total, item) => {
+    return total + item.recover;
+  }, 0);
+  const totalDeath = logCase.reduce((total, item) => {
+    return total + item.death;
+  }, 0);
+  const activeCases = totalCases - totalDeath - totalRecover;
   return (
     <CasesWrapper>
-      <Card title={"Total Kasus"}>hola</Card>
-      <Card title={"Total Aktif"}></Card>
-      <Card title={"Total Sembuh"}></Card>
-      <Card title={"Total Kematian"}></Card>
+      <Card title={"Total Kasus"} number={totalCases} />
+      <Card title={"Kasus Aktif"} number={activeCases} />
+      <Card title={"Total Sembuh"} number={totalRecover} />
+      <Card title={"Total Kematian"} number={totalDeath} />
     </CasesWrapper>
   );
 };

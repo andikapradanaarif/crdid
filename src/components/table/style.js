@@ -38,6 +38,6 @@ export const TableWrapper = styled.div`
     margin-left: auto;
   }
   .ant-table-content {
-    overflow: scroll;
+    overflow-x: auto;
   }
 `;
