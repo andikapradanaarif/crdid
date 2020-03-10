@@ -10,6 +10,7 @@ import { AuthenticationService } from "./services";
 import { AppWrapper } from "./App.style";
 import "./config/color.css";
 import "antd/dist/antd.css";
+import ReactGA from "react-ga";
 
 function PrivateRoute({ component: Component, ...rest }) {
   return (
@@ -27,6 +28,8 @@ function PrivateRoute({ component: Component, ...rest }) {
 }
 
 function App() {
+  ReactGA.initialize("UA-160192542-1");
+  ReactGA.pageview("/");
   return (
     <AppWrapper>
       <Router>
