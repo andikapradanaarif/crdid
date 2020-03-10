@@ -1,8 +1,8 @@
-import React from 'react';
-import { TopHeaderWrapper } from './style';
-import { CenterLayout } from '../';
-import { Icon } from 'antd';
-import { useHistory } from 'react-router';
+import React from "react";
+import { TopHeaderWrapper } from "./style";
+import { CenterLayout } from "../";
+import { Icon } from "antd";
+import { useHistory } from "react-router";
 
 const TopHeader = props => {
   const history = useHistory();
@@ -10,10 +10,10 @@ const TopHeader = props => {
     history.goBack();
   };
   return (
-    <TopHeaderWrapper className={'component_top_header'}>
+    <TopHeaderWrapper className={"component_top_header"}>
       <CenterLayout
-        width={'80%'}
-        className={'component_top_header_center_layout'}
+        width={"80%"}
+        className={"component_top_header_center_layout"}
       >
         <div
           className="component_top_header_icon"
@@ -33,4 +33,4 @@ const TopHeader = props => {
   );
 };
 
-export { TopHeader };
+export default TopHeader;

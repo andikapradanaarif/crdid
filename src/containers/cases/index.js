@@ -1,46 +1,31 @@
 import React from "react";
 import { CasesWrapper } from "./style";
-import { Case, CaseCard, Chart } from "../../components";
+import { Card } from "../../components";
+import { Row, Col } from "antd";
 
 const Index = props => {
   return (
     <CasesWrapper>
-      <div className={"container_row"}>
-        <Case title={"Coronavirus Cases:"} amount={10000} />
-        <Case title={"Deaths:"} amount={10000} className={"container_deaths"} />
-        <Case
+      {/* <div className={"container_row"}>
+        <Card title={"Coronavirus Cases:"} amount={10000} />
+        <Card title={"Deaths:"} amount={10000} className={"container_deaths"} />
+        <Card
           title={"Recovered:"}
           amount={10000}
           className={"container_recovered"}
         />
-      </div>
-      <div className={"container_card_row"}>
-        <div>
-          <CaseCard
-            isActive={true}
-            title={" Active Cases "}
-            highlightedAmount={1000}
-            highlightedDescription={"Currently Infected Patients"}
-            leftHighlightedAmount={41444}
-            leftHighlightedDescription={"in Mild Condition"}
-            rightHighlightedAmount={6042}
-            rightHighlightedDescription={"Serious or Critical"}
-          />
-          <Chart title={" Total Cases "} />
-        </div>
-        <div>
-          <CaseCard
-            title={" Closed Cases "}
-            highlightedAmount={1000}
-            highlightedDescription={"Currently Infected Patients"}
-            leftHighlightedAmount={41444}
-            leftHighlightedDescription={"in Mild Condition"}
-            rightHighlightedAmount={6042}
-            rightHighlightedDescription={"Serious or Critical"}
-          />
-          <Chart title={" Total Deaths "} />
-        </div>
-      </div>
+        <Card
+          title={"Recovered:"}
+          amount={10000}
+          className={"container_recovered"}
+        />
+      </div> */}
+      <Row gutter={8}>
+        <Col lg={6}>Col 1</Col>
+        <Col lg={6}>Col 2</Col>
+        <Col lg={6}>Col 3</Col>
+        <Col lg={6}>Col 4</Col>
+      </Row>
     </CasesWrapper>
   );
 };

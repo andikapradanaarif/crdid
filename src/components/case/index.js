@@ -4,7 +4,7 @@ import { ToPrice } from "../../utils/converter";
 
 const Index = props => {
   return (
-    <CaseWrapper className={props.className}>
+    <CaseWrapper>
       <h4>{props.title}</h4>
       <div className="component_amount">{ToPrice(props.amount, "")}</div>
     </CaseWrapper>

@@ -1,7 +1,7 @@
 export { default as Button } from "./button";
 export { default as CenterLayout } from "./centerLayout";
 export { default as ClickOut } from "./clickOut";
-export { TopHeader } from "./topHeader";
+export { default as TopHeader } from "./topHeader";
 export { default as Header } from "./header";
 export { default as Text } from "./text";
 export { default as UploadButton } from "./upload";
@@ -14,11 +14,3 @@ export { default as Table } from "./table";
 export { default as Case } from "./case";
 export { default as CaseCard } from "./caseCard";
 export { default as Chart } from "./chart";
-export {
-  InputForm,
-  InputPassword,
-  FormGroup,
-  FormGroupInline,
-  InputSelect,
-  InputFormButton
-} from "./forms";
