@@ -6,7 +6,8 @@ import {
   LatestUpdate,
   News,
   GrowthCases,
-  Genders
+  Genders,
+  Age
 } from "../../containers";
 import { CenterLayout, Header, FreeSpace } from "../../components";
 
@@ -21,6 +22,7 @@ function index() {
         <Summary />
         <GrowthCases />
         <Genders />
+        <Age />
         <LatestUpdate />
       </CenterLayout>
       <FreeSpace />

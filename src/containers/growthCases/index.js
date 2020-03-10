@@ -10,7 +10,9 @@ const Index = props => {
     xaxis: {
       categories: data.map(x => {
         const timeFormatted = TimeFormatter(x.date);
-        return `${timeFormatted.dayName}, ${timeFormatted.date} ${timeFormatted.monthName} ${timeFormatted.year}`;
+        return `${timeFormatted.date}/${timeFormatted.month}/${String(
+          timeFormatted.year
+        ).slice(2)}`;
       })
     }
   };
@@ -29,7 +31,7 @@ const Index = props => {
     <SummaryWrapper>
       <Wrapper>
         <Text.Header>Pertumbuhan Kasus</Text.Header>
-        <Chart options={options} series={series} type="line" />
+        <Chart options={options} series={series} type="line" height={300} />
       </Wrapper>
     </SummaryWrapper>
   );

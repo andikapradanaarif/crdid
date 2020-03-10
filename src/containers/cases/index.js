@@ -3,7 +3,6 @@ import { CasesWrapper } from "./style";
 import { Card } from "../../components";
 import logCase from "../../datasets/logCase";
 const Index = props => {
-  console.log(logCase);
   const totalCases = logCase.reduce((total, item) => {
     return total + item.newCase;
   }, 0);
