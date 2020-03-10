@@ -13,7 +13,7 @@ const Index = props => {
       key: "id"
     },
     {
-      title: "Date",
+      title: "Tanggal",
       dataIndex: "date",
       sorter: (a, b) => a.time - b.time,
       key: "date",
@@ -25,25 +25,25 @@ const Index = props => {
       sortDirections: ["descend"]
     },
     {
-      title: "Age",
+      title: "Usia",
       dataIndex: "age",
       key: "age"
     },
     {
-      title: "Sex",
+      title: "Gender",
       dataIndex: "sex",
       key: "sex",
       render: text => genders[text]
     },
     {
-      title: "City",
+      title: "Kota",
       dataIndex: "city",
       sorter: (a, b) => a.time - b.time,
       key: "city",
       sortDirections: ["descend"]
     },
     {
-      title: "Source",
+      title: "Sumber",
       dataIndex: "url",
       key: "url",
       render: text => {
@@ -65,6 +65,7 @@ const Index = props => {
           scroll={{ xScroll: 400 }}
           size={"small"}
           rowKey={record => record.id}
+          // pagination={false}
         />
       </Wrapper>
     </SummaryWrapper>

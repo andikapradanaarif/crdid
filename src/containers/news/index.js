@@ -31,7 +31,7 @@ const Index = () => {
   return (
     <LatestUpdateWrapper>
       <Wrapper>
-        <Text.Header>News</Text.Header>
+        <Text.Header>Berita Terbaru </Text.Header>
         <div className="container_content">
           <Timeline>{timeLineItemsRendered}</Timeline>
         </div>
