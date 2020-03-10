@@ -14,3 +14,4 @@ export { default as Table } from "./table";
 export { default as Case } from "./case";
 export { default as CaseCard } from "./caseCard";
 export { default as Chart } from "./chart";
+export { default as Wrapper } from "./wrapper";
