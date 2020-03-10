@@ -173,6 +173,78 @@ const patient = [
     date: "2020-03-09T15:54:35.205Z",
     url:
       "https://www.cnnindonesia.com/nasional/20200309172719-20-481849/pasien-positif-corona-di-indonesia-bertambah-jadi-19-orang"
+  },
+  {
+    id: 20,
+    sex: 1,
+    age: 70,
+    city: "jakarta",
+    date: "2020-03-10T15:54:35.205Z",
+    url:
+      "https://www.cnnindonesia.com/nasional/20200310175557-20-482202/jumlah-bertambah-27-pasien-di-indonesia-positif-corona"
+  },
+  {
+    id: 21,
+    sex: 1,
+    age: 46,
+    city: "jakarta",
+    date: "2020-03-10T15:54:35.205Z",
+    url:
+      "https://www.cnnindonesia.com/nasional/20200310175557-20-482202/jumlah-bertambah-27-pasien-di-indonesia-positif-corona"
+  },
+  {
+    id: 22,
+    sex: 1,
+    age: 36,
+    city: "-",
+    date: "2020-03-10T15:54:35.205Z",
+    url:
+      "https://www.cnnindonesia.com/nasional/20200310175557-20-482202/jumlah-bertambah-27-pasien-di-indonesia-positif-corona"
+  },
+  {
+    id: 23,
+    sex: 1,
+    age: 73,
+    city: "-",
+    date: "2020-03-10T15:54:35.205Z",
+    url:
+      "https://www.cnnindonesia.com/nasional/20200310175557-20-482202/jumlah-bertambah-27-pasien-di-indonesia-positif-corona"
+  },
+  {
+    id: 24,
+    sex: 2,
+    age: 46,
+    city: "-",
+    date: "2020-03-10T15:54:35.205Z",
+    url:
+      "https://www.cnnindonesia.com/nasional/20200310175557-20-482202/jumlah-bertambah-27-pasien-di-indonesia-positif-corona"
+  },
+  {
+    id: 25,
+    sex: 1,
+    age: 53,
+    city: "-",
+    date: "2020-03-10T15:54:35.205Z",
+    url:
+      "https://www.cnnindonesia.com/nasional/20200310175557-20-482202/jumlah-bertambah-27-pasien-di-indonesia-positif-corona"
+  },
+  {
+    id: 26,
+    sex: 2,
+    age: 46,
+    city: "-",
+    date: "2020-03-10T15:54:35.205Z",
+    url:
+      "https://www.cnnindonesia.com/nasional/20200310175557-20-482202/jumlah-bertambah-27-pasien-di-indonesia-positif-corona"
+  },
+  {
+    id: 27,
+    sex: 2,
+    age: 33,
+    city: "-",
+    date: "2020-03-10T15:54:35.205Z",
+    url:
+      "https://www.cnnindonesia.com/nasional/20200310175557-20-482202/jumlah-bertambah-27-pasien-di-indonesia-positif-corona"
   }
 ];
 
