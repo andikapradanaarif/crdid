@@ -58,7 +58,7 @@ const Index = props => {
   return (
     <SummaryWrapper>
       <RowWrapper>
-        <Wrapper className="container_gender_content">
+        <Wrapper className="container_gender_table">
           <Text.Header>Tabel Gender</Text.Header>
           <Table
             columns={columns}
@@ -68,9 +68,9 @@ const Index = props => {
             pagination={false}
           />
         </Wrapper>
-        <Wrapper className="container_gender_content">
+        <Wrapper className="container_gender_chart">
           <Text.Header>Grafik Gender</Text.Header>
-          <Chart options={options} series={series} type="pie" height={250} />
+          <Chart options={options} series={series} type="pie" height={200} />
         </Wrapper>
       </RowWrapper>
     </SummaryWrapper>

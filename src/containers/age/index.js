@@ -43,10 +43,18 @@ const Index = props => {
   const series = patients.map(item => item.total);
   const options = {
     labels: patients.map(item => `${item.age}0-${item.age}9 tahun`),
-    colors: ["#A2B86C", "#117899", "#fbc02d", "#dc851f", "#ffa737"],
+    colors: [
+      "#A2B86C",
+      "#117899",
+      "#fbc02d",
+      "#47B39C",
+      "#f95d6a",
+      "#73B1DE",
+      "#665191"
+    ],
     responsive: [
       {
-        breakpoint: 480,
+        breakpoint: 460,
         options: {
           legend: {
             position: "bottom"
@@ -58,7 +66,7 @@ const Index = props => {
   return (
     <SummaryWrapper>
       <RowWrapper>
-        <Wrapper className="container_gender_content">
+        <Wrapper className="container_gender_table">
           <Text.Header>Tabel Usia</Text.Header>
           <Table
             columns={columns}
@@ -68,9 +76,9 @@ const Index = props => {
             pagination={false}
           />
         </Wrapper>
-        <Wrapper className="container_gender_content">
+        <Wrapper className="container_gender_chart">
           <Text.Header>Grafik Usia</Text.Header>
-          <Chart options={options} series={series} type="pie" height={250} />
+          <Chart options={options} series={series} type="pie" height={230} />
         </Wrapper>
       </RowWrapper>
     </SummaryWrapper>

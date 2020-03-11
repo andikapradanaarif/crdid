@@ -6,4 +6,8 @@ export const SummaryWrapper = styled.div`
   .container_gender_content {
     /* width: 563px; */
   }
+  .container_gender_chart {
+    min-width: 400px;
+    /* width: 563px; */
+  }
 `;

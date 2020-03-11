@@ -11,7 +11,7 @@ const Index = props => {
 
   let firstDate = new Date(sortedDate[0].date);
   let yDate = new Date(sortedDate[0].date);
-  const lastDate = new Date(sortedDate[sortedDate.length - 1].date);
+  const lastDate = new Date();
   const longTimeCase =
     Math.ceil((lastDate - firstDate) / (1000 * 3600 * 24)) + 2;
 
@@ -33,7 +33,7 @@ const Index = props => {
     {
       name: "Total Kasus",
       data: listDate.map(i => {
-        let newDate = new Date(data[dataIndex].date);
+        let newDate = new Date(data?.[dataIndex]?.date);
         //console.log(i, newDate, dataIndex);
         newDate.setDate(newDate.getDate() - 1);
         yDate.setDate(yDate.getDate() + 1);
@@ -42,7 +42,7 @@ const Index = props => {
           newDate.getDate() === yDate.getDate() &&
           newDate.getMonth() === yDate.getMonth()
         ) {
-          totalCase = totalCase + data[dataIndex].newCase;
+          totalCase = totalCase + data?.[dataIndex]?.newCase;
           // console.log(data[dataIndex].newCase, dataIndex);
           dataIndex = dataIndex + 1;
           // console.log(i, newDate.getDate(), yDate.getDate());
