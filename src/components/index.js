@@ -15,3 +15,4 @@ export { default as Case } from "./case";
 export { default as CaseCard } from "./caseCard";
 export { default as Chart } from "./chart";
 export { default as Wrapper } from "./wrapper";
+export { default as RowWrapper } from "./rowWrapper";

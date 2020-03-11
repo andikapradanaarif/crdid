@@ -8,7 +8,7 @@ const Index = props => {
     <FooterWrapper>
       <div className="component_footer_content">
         <CenterLayout>
-          <p>email us infocorona.id@gmail.com</p>
+          <p>information and support, email us infocorona.id@gmail.com</p>
         </CenterLayout>
       </div>
     </FooterWrapper>
