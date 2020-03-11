@@ -42,7 +42,18 @@ const Index = props => {
   ];
   const series = patients.map(item => item.total);
   const options = {
-    labels: patients.map(item => `${item.age}0-${item.age}9 tahun`)
+    labels: patients.map(item => `${item.age}0-${item.age}9 tahun`),
+    colors: ["#A2B86C", "#117899", "#fbc02d", "#dc851f", "#ffa737"],
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          legend: {
+            position: "bottom"
+          }
+        }
+      }
+    ]
   };
   return (
     <SummaryWrapper>
@@ -59,7 +70,7 @@ const Index = props => {
         </Wrapper>
         <Wrapper className="container_gender_content">
           <Text.Header>Grafik Usia</Text.Header>
-          <Chart options={options} series={series} type="pie" />
+          <Chart options={options} series={series} type="pie" height={250} />
         </Wrapper>
       </RowWrapper>
     </SummaryWrapper>

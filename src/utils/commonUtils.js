@@ -15,7 +15,7 @@ function timeoutFunc(timeout, action, delay) {
 }
 
 function isPlural(num) {
-  return num > 1 && 's';
+  return num > 1 && "s";
 }
 
 export { isEmpty, checkNextPage, timeoutFunc, isPlural };

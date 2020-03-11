@@ -9,7 +9,7 @@ import {
   Genders,
   Age
 } from "../../containers";
-import { CenterLayout, Header, FreeSpace } from "../../components";
+import { CenterLayout, Header, FreeSpace, Footer } from "../../components";
 
 function index() {
   return (
@@ -23,9 +23,9 @@ function index() {
         <GrowthCases />
         <Genders />
         <Age />
-        <LatestUpdate />
       </CenterLayout>
       <FreeSpace />
+      <Footer />
     </React.Fragment>
   );
 }

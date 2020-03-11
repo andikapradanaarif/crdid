@@ -42,7 +42,18 @@ const Index = props => {
   ];
   const series = patients.map(item => item.total);
   const options = {
-    labels: ["Wanita", "Pria", "Tidak Diketahui"]
+    labels: ["Wanita", "Pria", "Tidak Diketahui"],
+    colors: ["#A2B86C", "#117899", "#fbc02d"],
+    responsive: [
+      {
+        breakpoint: 480,
+        options: {
+          legend: {
+            position: "bottom"
+          }
+        }
+      }
+    ]
   };
   return (
     <SummaryWrapper>
@@ -59,7 +70,7 @@ const Index = props => {
         </Wrapper>
         <Wrapper className="container_gender_content">
           <Text.Header>Grafik Gender</Text.Header>
-          <Chart options={options} series={series} type="pie" height={200} />
+          <Chart options={options} series={series} type="pie" height={250} />
         </Wrapper>
       </RowWrapper>
     </SummaryWrapper>
