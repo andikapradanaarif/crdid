@@ -50,6 +50,9 @@ const Index = props => {
         options: {
           legend: {
             position: "bottom"
+          },
+          chart: {
+            height: 270
           }
         }
       }
