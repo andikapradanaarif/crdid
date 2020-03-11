@@ -18,7 +18,7 @@ function index() {
         <Cases />
         <News />
         <Summary />
-        {/* <GrowthCases /> */}
+        <GrowthCases />
         {/* <LatestUpdate /> */}
       </CenterLayout>
       <FreeSpace />
