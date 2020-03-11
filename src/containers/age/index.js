@@ -50,7 +50,8 @@ const Index = props => {
       "#47B39C",
       "#f95d6a",
       "#73B1DE",
-      "#665191"
+      "#665191",
+      "#34495e"
     ],
     responsive: [
       {

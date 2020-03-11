@@ -19,7 +19,7 @@ const Index = () => {
     <CasesWrapper>
       <Card title={"Total Kasus"} number={totalCases} />
       <Card title={"Kasus Aktif"} number={activeCases} />
-      <Card title={"Total Sembuh"} number={totalRecover} />
+      <Card title={"Total Recover"} number={totalRecover} />
       <Card title={"Total Kematian"} number={totalDeath} />
     </CasesWrapper>
   );

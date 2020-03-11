@@ -28,6 +28,12 @@ const logCase = [
     newCase: 8,
     death: 0,
     recover: 0
+  },
+  {
+    date: "2020-03-11T17:00:00.000Z",
+    newCase: 7,
+    death: 1,
+    recover: 2
   }
 ];
 

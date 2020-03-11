@@ -63,6 +63,31 @@ const logNews = [
           "https://www.cnnindonesia.com/nasional/20200310185956-20-482247/pemerintah-soal-wni-corona-di-singapura-biar-dirawat-di-sana"
       }
     ]
+  },
+  {
+    date: "2020-03-11T15:54:35.205Z",
+    activity: [
+      {
+        title: "Dua Pasien Virus Corona Dinyatakan Sembuh dan Boleh Pulang",
+        desc: `"Tadi malam pukul 02.00 WIB lewat sedikit, pasien identitas nomor 25 meninggal dunia," kata juru bicara pemerintah.
+        Yuri mengatakan, pasien tersebut merupakan perempuan warga negara asing (WNA) berusia 53 tahun`,
+        url:
+          "https://nasional.kompas.com/read/2020/03/11/14235891/dua-pasien-virus-corona-dinyatakan-sembuh-dan-boleh-pulang"
+      },
+      {
+        title: "Satu Pasien Corona di Indonesia Meninggal Dunia",
+        desc: `Juru Bicara Pemerintah untuk Penanganan virus Corona Achmad Yurianto dalam konferensi pers di Istana Kepresidenan, Jakarta, Rabu (11/3/2020) mengatakan  dua pasien sudah sembuh.
+        dua orang tersebut yakni pasien 06 dan pasien 14.`,
+        url:
+          "https://nasional.kompas.com/read/2020/03/11/13061741/breaking-news-satu-pasien-corona-di-indonesia-meninggal-dunia"
+      },
+      {
+        title: "Kasus Positif corona bertambah 7 orang",
+        desc: `"Hingga saat ini ada tambahan 7 pasien lagi dengan kondisi rata-rata sakit ringan sedang. Dan semuanya adalah imported case," kata Yurianto.`,
+        url:
+          "https://www.cnbcindonesia.com/news/20200311170046-4-144156/alert-pasien-positif-corona-nambah-7-lagi-total-ada-34"
+      }
+    ]
   }
 ];
 
