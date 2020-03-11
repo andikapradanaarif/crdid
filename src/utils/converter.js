@@ -20,17 +20,21 @@ export function ObjToArr(obj) {
 }
 
 //convert 1000 to 1.000
-export function ToPrice(x, currency = 'Rp. ') {
+export function ToPrice(x, currency = "Rp. ") {
   if (!x) {
-    return currency + '0';
+    return currency + "0";
   }
-  return currency + x.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
+  return currency + x.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
+}
+
+export function threeDigit(x) {
+  return x.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
 }
 
 //return input to integer
 export function CheckInteger(x) {
-  const ans = x.replace(/(?!-)[^0-9]/g, '');
-  return parseInt(ans < 0 || ans === '' ? 0 : ans, 10);
+  const ans = x.replace(/(?!-)[^0-9]/g, "");
+  return parseInt(ans < 0 || ans === "" ? 0 : ans, 10);
 }
 
 export function SumObj(obj1, key, numOfItem) {

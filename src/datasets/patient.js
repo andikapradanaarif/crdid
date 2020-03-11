@@ -7,7 +7,7 @@ const patient = [
     id: 1,
     sex: 1,
     age: 31,
-    date: "2020-03-01T17:00:00.000Z",
+    date: "2020-03-02T17:00:00.000Z",
     city: "Jakarta",
     url:
       "https://nasional.kompas.com/read/2020/03/03/06314981/fakta-lengkap-kasus-pertama-virus-corona-di-indonesia?page=all"
@@ -16,7 +16,7 @@ const patient = [
     id: 2,
     sex: 1,
     age: 64,
-    date: "2020-03-01T17:00:00.000Z",
+    date: "2020-03-02T17:00:00.000Z",
     city: "Jakarta",
     url:
       "https://nasional.kompas.com/read/2020/03/03/06314981/fakta-lengkap-kasus-pertama-virus-corona-di-indonesia?page=all"
@@ -25,7 +25,7 @@ const patient = [
     id: 3,
     sex: 0,
     age: 33,
-    date: "2020-03-05T17:00:00.000Z",
+    date: "2020-03-06T17:00:00.000Z",
     city: "Jakarta",
     url:
       "https://news.detik.com/berita/d-4931203/pasien-kasus-3-dan-4-corona-minta-tak-diumbar-identitasnya"
@@ -34,7 +34,7 @@ const patient = [
     id: 4,
     sex: 0,
     age: 34,
-    date: "2020-03-05T17:00:00.000Z",
+    date: "2020-03-06T17:00:00.000Z",
     city: "Jakarta",
     url:
       "https://news.detik.com/berita/d-4931203/pasien-kasus-3-dan-4-corona-minta-tak-diumbar-identitasnya"
@@ -43,7 +43,7 @@ const patient = [
     id: 5,
     sex: 2,
     age: 55,
-    date: "2020-03-07T17:00:00.000Z",
+    date: "2020-03-08T17:00:00.000Z",
     city: "Jakarta",
     url:
       "https://www.liputan6.com/news/read/4196814/pasien-positif-virus-corona-di-indonesia-bertambah-jadi-6-orang"
@@ -52,7 +52,7 @@ const patient = [
     id: 6,
     sex: 2,
     age: 36,
-    date: "2020-03-07T17:00:00.000Z",
+    date: "2020-03-08T17:00:00.000Z",
     city: "Jakarta",
     url:
       "https://www.liputan6.com/news/read/4196814/pasien-positif-virus-corona-di-indonesia-bertambah-jadi-6-orang"

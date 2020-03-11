@@ -8,7 +8,7 @@ import {
   GrowthCases,
   Genders
 } from "../../containers";
-import { CenterLayout, Header, FreeSpace } from "../../components";
+import { CenterLayout, Header, FreeSpace, Footer } from "../../components";
 
 function index() {
   return (
@@ -21,9 +21,10 @@ function index() {
         <Summary />
         <GrowthCases />
         <Genders />
-        <LatestUpdate />
+        {/* <LatestUpdate /> */}
       </CenterLayout>
       <FreeSpace />
+      <Footer />
     </React.Fragment>
   );
 }
