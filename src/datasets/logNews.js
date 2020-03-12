@@ -88,6 +88,23 @@ const logNews = [
           "https://www.cnbcindonesia.com/news/20200311170046-4-144156/alert-pasien-positif-corona-nambah-7-lagi-total-ada-34"
       }
     ]
+  },
+  {
+    date: "2020-03-12T15:54:35.205Z",
+    activity: [
+      {
+        title: "RS Persahabatan Pulangkan Pasien 6 dan 14 yang Sembuh Corona",
+        url:
+          "https://www.cnnindonesia.com/nasional/20200312125338-20-482821/rs-persahabatan-pulangkan-pasien-6-dan-14-yang-sembuh-corona"
+      },
+      {
+        title: "Total 3 Pasien di Indonesia Sembuh dari Corona",
+        desc: `"Secara laboratorium dua kali kita lakukan pemeriksaan hasilnya negatif maka diputuskan ketiga pasien ini dinyatakan sembuh dan tidak membutuhkan lagi perawatan,"
+         kata juru bicara pemerintah RI terkait COVID-19, Achmad Yurianto, di RSUP Persahabatan, Jakarta Timur, Kamis (12/3/2020)."`,
+        url:
+          "https://news.detik.com/berita/d-4936124/ini-data-3-pasien-di-indonesia-yang-sembuh-dari-corona"
+      }
+    ]
   }
 ];
 
