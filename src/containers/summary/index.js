@@ -5,12 +5,14 @@ import data from "../../datasets/patient";
 import { TimeFormatter } from "../../utils/timeParser";
 
 const Index = props => {
+  const dataPatient = data.reverse();
   const genders = ["-", "Wanita", "Pria"];
   const columns = [
     {
-      title: "No",
+      title: "Case",
       dataIndex: "id",
-      key: "id"
+      key: "id",
+      render: text => "#" + text
     },
     {
       title: "Tanggal",
@@ -61,7 +63,7 @@ const Index = props => {
         <Text.Header>Summary</Text.Header>
         <Table
           columns={columns}
-          dataSource={data}
+          dataSource={dataPatient}
           size={"middle"}
           rowKey={record => record.id}
           scroll={{ x: "max-content" }}

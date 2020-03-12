@@ -50,7 +50,8 @@ const Index = props => {
       "#47B39C",
       "#f95d6a",
       "#73B1DE",
-      "#665191"
+      "#665191",
+      "#34495e"
     ],
     responsive: [
       {
@@ -58,6 +59,9 @@ const Index = props => {
         options: {
           legend: {
             position: "bottom"
+          },
+          chart: {
+            height: 350
           }
         }
       }
@@ -66,7 +70,7 @@ const Index = props => {
   return (
     <SummaryWrapper>
       <RowWrapper>
-        <Wrapper className="container_gender_table">
+        <Wrapper className="container_age_table">
           <Text.Header>Tabel Usia</Text.Header>
           <Table
             columns={columns}
@@ -76,7 +80,7 @@ const Index = props => {
             pagination={false}
           />
         </Wrapper>
-        <Wrapper className="container_gender_chart">
+        <Wrapper className="container_age_chart">
           <Text.Header>Grafik Usia</Text.Header>
           <Chart options={options} series={series} type="pie" height={230} />
         </Wrapper>

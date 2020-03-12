@@ -55,7 +55,8 @@ const patient = [
     date: "2020-03-08T17:00:00.000Z",
     city: "Jakarta",
     url:
-      "https://www.liputan6.com/news/read/4196814/pasien-positif-virus-corona-di-indonesia-bertambah-jadi-6-orang"
+      "https://www.liputan6.com/news/read/4196814/pasien-positif-virus-corona-di-indonesia-bertambah-jadi-6-orang",
+    status: "recover"
   },
   {
     id: 7,
@@ -127,7 +128,8 @@ const patient = [
     city: "-",
     date: "2020-03-09T15:54:35.205Z",
     url:
-      "https://www.cnnindonesia.com/nasional/20200309172719-20-481849/pasien-positif-corona-di-indonesia-bertambah-jadi-19-orang"
+      "https://www.cnnindonesia.com/nasional/20200309172719-20-481849/pasien-positif-corona-di-indonesia-bertambah-jadi-19-orang",
+    status: "recover"
   },
   {
     id: 15,
@@ -226,7 +228,8 @@ const patient = [
     city: "-",
     date: "2020-03-10T15:54:35.205Z",
     url:
-      "https://www.cnnindonesia.com/nasional/20200310175557-20-482202/jumlah-bertambah-27-pasien-di-indonesia-positif-corona"
+      "https://www.cnnindonesia.com/nasional/20200310175557-20-482202/jumlah-bertambah-27-pasien-di-indonesia-positif-corona",
+    status: "death"
   },
   {
     id: 26,
@@ -243,6 +246,69 @@ const patient = [
     age: 33,
     city: "-",
     date: "2020-03-10T15:54:35.205Z",
+    url:
+      "https://www.cnnindonesia.com/nasional/20200310175557-20-482202/jumlah-bertambah-27-pasien-di-indonesia-positif-corona"
+  },
+  {
+    id: 28,
+    sex: 2,
+    age: 37,
+    city: "-",
+    date: "2020-03-11T15:54:35.205Z",
+    url:
+      "https://www.cnbcindonesia.com/news/20200311170046-4-144156/alert-pasien-positif-corona-nambah-7-lagi-total-ada-34"
+  },
+  {
+    id: 29,
+    sex: 2,
+    age: 51,
+    city: "-",
+    date: "2020-03-11T15:54:35.205Z",
+    url:
+      "https://www.cnbcindonesia.com/news/20200311170046-4-144156/alert-pasien-positif-corona-nambah-7-lagi-total-ada-34"
+  },
+  {
+    id: 30,
+    sex: 2,
+    age: 84,
+    city: "-",
+    date: "2020-03-11T15:54:35.205Z",
+    url:
+      "https://www.cnbcindonesia.com/news/20200311170046-4-144156/alert-pasien-positif-corona-nambah-7-lagi-total-ada-34"
+  },
+  {
+    id: 31,
+    sex: 1,
+    age: 48,
+    city: "-",
+    date: "2020-03-11T15:54:35.205Z",
+    url:
+      "https://www.cnbcindonesia.com/news/20200311170046-4-144156/alert-pasien-positif-corona-nambah-7-lagi-total-ada-34"
+  },
+  {
+    id: 32,
+    sex: 2,
+    age: 45,
+    city: "-",
+    date: "2020-03-11T15:54:35.205Z",
+    url:
+      "https://www.cnbcindonesia.com/news/20200311170046-4-144156/alert-pasien-positif-corona-nambah-7-lagi-total-ada-34"
+  },
+  {
+    id: 33,
+    sex: 2,
+    age: 29,
+    city: "-",
+    date: "2020-03-11T15:54:35.205Z",
+    url:
+      "https://www.cnbcindonesia.com/news/20200311170046-4-144156/alert-pasien-positif-corona-nambah-7-lagi-total-ada-34"
+  },
+  {
+    id: 34,
+    sex: 2,
+    age: 42,
+    city: "-",
+    date: "2020-03-11T15:54:35.205Z",
     url:
       "https://www.cnnindonesia.com/nasional/20200310175557-20-482202/jumlah-bertambah-27-pasien-di-indonesia-positif-corona"
   }
