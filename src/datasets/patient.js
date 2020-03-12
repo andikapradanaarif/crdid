@@ -225,10 +225,10 @@ const patient = [
     id: 25,
     sex: 1,
     age: 53,
-    city: "-",
+    city: "Bali",
     date: "2020-03-10T15:54:35.205Z",
     url:
-      "https://www.cnnindonesia.com/nasional/20200310175557-20-482202/jumlah-bertambah-27-pasien-di-indonesia-positif-corona",
+      "https://regional.kompas.com/read/2020/03/12/05200001/duduk-perkara-pasien-25-virus-corona-meninggal-di-bali-wna-perempuan-pemprov",
     status: "death"
   },
   {
@@ -310,7 +310,7 @@ const patient = [
     city: "-",
     date: "2020-03-11T15:54:35.205Z",
     url:
-      "https://www.cnnindonesia.com/nasional/20200310175557-20-482202/jumlah-bertambah-27-pasien-di-indonesia-positif-corona"
+      "https://www.cnbcindonesia.com/news/20200311170046-4-144156/alert-pasien-positif-corona-nambah-7-lagi-total-ada-34"
   }
 ];
 
