@@ -24,78 +24,75 @@ const Index = () => {
     });
   }, [selectedProvince]);
 
-  if (hospitals.length > 0) {
-    const columns = [
-      {
-        title: "Provinsi",
-        width: 130,
-        dataIndex: "Provinsi",
-        key: "Provinsi"
-      },
-      {
-        title: "Nama Rumah Sakit",
-        width: 200,
-        dataIndex: "Nama Rumah Sakit",
-        sorter: (a, b) => a.time - b.time,
-        key: "Nama Rumah Sakit"
-      },
-      {
-        title: "Alamat",
-        dataIndex: "Alamat",
-        key: "Alamat"
-      },
-      {
-        title: "Lokasi",
-        dataIndex: "Linkmaps",
-        key: "Linkmaps",
-        render: text => {
-          return (
-            <a href={text} target="_blank" rel="noopener noreferrer">
-              {text.slice(0, 30)}...
-            </a>
-          );
-        }
+  const columns = [
+    {
+      title: "Provinsi",
+      width: 130,
+      dataIndex: "Provinsi",
+      key: "Provinsi"
+    },
+    {
+      title: "Nama Rumah Sakit",
+      width: 200,
+      dataIndex: "Nama Rumah Sakit",
+      sorter: (a, b) => a.time - b.time,
+      key: "Nama Rumah Sakit"
+    },
+    {
+      title: "Alamat",
+      dataIndex: "Alamat",
+      key: "Alamat"
+    },
+    {
+      title: "Lokasi",
+      dataIndex: "Linkmaps",
+      key: "Linkmaps",
+      render: text => {
+        return (
+          <a href={text} target="_blank" rel="noopener noreferrer">
+            {text.slice(0, 30)}...
+          </a>
+        );
       }
-    ];
-    const optionRendered = supportedProvince.map((item, i) => {
-      return (
-        <Option value={item} key={i}>
-          {item}
-        </Option>
-      );
-    });
+    }
+  ];
+  const optionRendered = supportedProvince.map((item, i) => {
     return (
-      <SummaryWrapper>
-        <Wrapper>
-          <Text.Header>Cari Rumah Sakit Rujukan</Text.Header>
-          <div className="container_hospital_form_search">
-            <Select
-              showSearch
-              style={{ width: 400 }}
-              placeholder="Pilih Rumah Sakit Rujukan"
-              optionFilterProp="children"
-              onChange={value => setSelectedProvince(value)}
-              filterOption={(input, option) =>
-                option.props.value.toLowerCase().indexOf(input.toLowerCase()) >=
-                0
-              }
-            >
-              {optionRendered}
-            </Select>
-          </div>
-          {selectedProvince !== "" && (
-            <Table
-              columns={columns}
-              dataSource={hospitals}
-              size={"middle"}
-              rowKey={(_, i) => i}
-              scroll={{ x: "max-content" }}
-            />
-          )}
-        </Wrapper>
-      </SummaryWrapper>
+      <Option value={item} key={i}>
+        {item}
+      </Option>
     );
-  } else return <div />;
+  });
+  return (
+    <SummaryWrapper>
+      <Wrapper>
+        <Text.Header>Cari Rumah Sakit Rujukan</Text.Header>
+        <div className="container_hospital_form_search">
+          <Select
+            showSearch
+            style={{ width: 400 }}
+            placeholder="Pilih Rumah Sakit Rujukan"
+            optionFilterProp="children"
+            onChange={value => setSelectedProvince(value)}
+            filterOption={(input, option) =>
+              option.props.value.toLowerCase().indexOf(input.toLowerCase()) >= 0
+            }
+          >
+            {optionRendered}
+          </Select>
+        </div>
+        {selectedProvince !== "" && (
+          <Table
+            columns={columns}
+            dataSource={hospitals}
+            size={"middle"}
+            rowKey={(_, i) => i}
+            scroll={{ x: "max-content" }}
+          />
+        )}
+      </Wrapper>
+    </SummaryWrapper>
+  );
 };
 
 export default Index;
