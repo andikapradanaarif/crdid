@@ -3,7 +3,7 @@ import {
   Description,
   Cases,
   Summary,
-  LatestUpdate,
+  Hospital,
   News,
   GrowthCases,
   Genders,
@@ -18,6 +18,7 @@ function index() {
       <CenterLayout>
         <Description />
         <Cases />
+        <Hospital />
         <News />
         <Summary />
         <GrowthCases />
