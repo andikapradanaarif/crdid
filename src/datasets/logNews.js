@@ -92,6 +92,11 @@ const logNews = [
   {
     date: "2020-03-12T15:54:35.205Z",
     activity: [
+     {
+        title: "Data Terbaru Corona Terkait Indonesia, 12 Maret 2020 Pukul 18.00 WIB",
+        url:
+          "https://news.detik.com/berita/d-4936570/data-terbaru-corona-terkait-indonesia-12-maret-2020-pukul-1800-wib/2"      
+      },
       {
         title: "RS Persahabatan Pulangkan Pasien 6 dan 14 yang Sembuh Corona",
         url:

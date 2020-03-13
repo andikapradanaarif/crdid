@@ -18,10 +18,6 @@ const Index = () => {
       return new Date(a.date) - new Date(b.date);
     });
 
-    // const sortedDate2 = cases.sort((a, b) => {
-    //   return new Date(a.date) - new Date(b.date);
-    // });
-
     let firstDate = new Date(sortedDate?.[0]?.date);
     let yDate = new Date(sortedDate?.[0]?.date);
     const lastDate = new Date();
@@ -68,7 +64,7 @@ const Index = () => {
     return (
       <SummaryWrapper>
         <Wrapper>
-          <Text.Header>Pertumbuhan Kasus</Text.Header>
+          <Text.Header>Grafik Total Kasus</Text.Header>
           <Chart options={options} series={series} type="line" height={300} />
         </Wrapper>
       </SummaryWrapper>
