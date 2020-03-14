@@ -10,10 +10,10 @@ export const SummaryWrapper = styled.div`
   .container_hospital_content {
     .container_hospital_word {
       display: inline-block;
-      margin-right: 30px;
+      margin-right: 40px;
       width: 39%;
       min-width: 300px;
-      @media (max-width: 600px) {
+      @media (max-width: 700px) {
         width: 100%;
         min-width: 0px;
       }
@@ -26,8 +26,8 @@ export const SummaryWrapper = styled.div`
       margin-top: 5px;
       vertical-align: top;
       display: inline-block;
-      width: 38%;
-      @media (max-width: 600px) {
+      width: 30%;
+      @media (max-width: 700px) {
         width: 100%;
       }
       margin-bottom: 20px;
