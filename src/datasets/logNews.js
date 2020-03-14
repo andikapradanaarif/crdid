@@ -92,10 +92,11 @@ const logNews = [
   {
     date: "2020-03-12T15:54:35.205Z",
     activity: [
-     {
-        title: "Data Terbaru Corona Terkait Indonesia, 12 Maret 2020 Pukul 18.00 WIB",
+      {
+        title:
+          "Data Terbaru Corona Terkait Indonesia, 12 Maret 2020 Pukul 18.00 WIB",
         url:
-          "https://news.detik.com/berita/d-4936570/data-terbaru-corona-terkait-indonesia-12-maret-2020-pukul-1800-wib/2"      
+          "https://news.detik.com/berita/d-4936570/data-terbaru-corona-terkait-indonesia-12-maret-2020-pukul-1800-wib/2"
       },
       {
         title: "RS Persahabatan Pulangkan Pasien 6 dan 14 yang Sembuh Corona",
@@ -108,6 +109,37 @@ const logNews = [
          kata juru bicara pemerintah RI terkait COVID-19, Achmad Yurianto, di RSUP Persahabatan, Jakarta Timur, Kamis (12/3/2020)."`,
         url:
           "https://news.detik.com/berita/d-4936124/ini-data-3-pasien-di-indonesia-yang-sembuh-dari-corona"
+      }
+    ]
+  },
+  {
+    date: "2020-03-13T15:54:35.205Z",
+    activity: [
+      {
+        title:
+          "Tambah 35 orang, total kasus corona 69 orang, 4 meninggal, 5 sembuh",
+        url:
+          "https://nasional.kontan.co.id/news/breaking-news-tambah-35-orang-total-terinfeksi-corona-69-orang-3-meninggal"
+      },
+      {
+        title: "2 Pasien Suspect Virus Corona di RSPI Meninggal Dunia",
+        desc:
+          "Juru Bicara Pemerintah Untuk Penanganan Covid-19 (Corona) Achmad Yurianto mengatakan, kedua pasien tersebut semuanya perempuan, masing-masing berusia 57 tahun dan 37 tahun.",
+        url:
+          "https://www.ayobandung.com/read/2020/03/12/82416/2-pasien-suspect-virus-corona-di-rspi-meninggal-dunia"
+      },
+      {
+        title: "Pasien Meninggal di RS Moewardi Solo Positif Virus Corona",
+        desc:
+          " pasien meninggal itu berstatus Pasien Dalam Pengawasan (PDP). Masuk ke ruang isolasi RSUD dr. Moewardi pada Minggu (8/3) lalu, dengan gejala awal menunjukkan terinfeksi Covid-19. Hanya 3 hari setelah masuk rumah sakit, pada Rabu (11/3), pasien itu dinyatakan meninggal dunia.",
+        url:
+          "https://jateng.idntimes.com/news/indonesia/sunariyah/pasien-meninggal-di-rs-moewardi-solo-positif-karena-virus-corona-regional-jateng"
+      },
+      {
+        title:
+          "1 Pasien Positif COVID-19 Melarikan Diri dari Isolasi RS Persahabatan",
+        url:
+          "https://www.idntimes.com/news/indonesia/aldzah-fatimah-aditya/breaking-1-pasien-positif-covid-19-melarikan-diri-dari-isolasi-rs-persahabatan/"
       }
     ]
   }

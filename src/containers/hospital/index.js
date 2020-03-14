@@ -35,7 +35,6 @@ const Index = () => {
       title: "Nama Rumah Sakit",
       width: 200,
       dataIndex: "Nama Rumah Sakit",
-      sorter: (a, b) => a.time - b.time,
       key: "Nama Rumah Sakit"
     },
     {
@@ -66,20 +65,29 @@ const Index = () => {
   return (
     <SummaryWrapper>
       <Wrapper>
-        <Text.Header>Cari Rumah Sakit Rujukan</Text.Header>
-        <div className="container_hospital_form_search">
-          <Select
-            showSearch
-            style={{ width: 400 }}
-            placeholder="Pilih Rumah Sakit Rujukan"
-            optionFilterProp="children"
-            onChange={value => setSelectedProvince(value)}
-            filterOption={(input, option) =>
-              option.props.value.toLowerCase().indexOf(input.toLowerCase()) >= 0
-            }
-          >
-            {optionRendered}
-          </Select>
+        <Text.Header>Rumah Sakit Rujukan</Text.Header>
+        <div className="container_hospital_content">
+          <div className="container_hospital_word">
+            <p>
+              Apakah anda mengalami gejala-gejala Covid-19? Segera periksakan di
+              Rumah Sakit rujukan pemerintah
+            </p>
+          </div>
+          <div className="container_hospital_form_search">
+            <Select
+              showSearch
+              style={{ width: "100%", minWidth: 200 }}
+              placeholder="Pilih Provinsi"
+              optionFilterProp="children"
+              onChange={value => setSelectedProvince(value)}
+              filterOption={(input, option) =>
+                option.props.value.toLowerCase().indexOf(input.toLowerCase()) >=
+                0
+              }
+            >
+              {optionRendered}
+            </Select>
+          </div>
         </div>
         {selectedProvince !== "" && (
           <Table

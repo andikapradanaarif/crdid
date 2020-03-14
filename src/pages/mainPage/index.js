@@ -16,8 +16,8 @@ function index() {
     <React.Fragment>
       <Header />
       <CenterLayout>
-        <Description />
         <Cases />
+        <Description />
         <Hospital />
         <News />
         <Summary />
