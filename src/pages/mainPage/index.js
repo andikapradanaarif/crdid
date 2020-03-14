@@ -6,6 +6,7 @@ import {
   Hospital,
   News,
   GrowthCases,
+  DailyReport,
   Genders,
   Age
 } from "../../containers";
@@ -16,12 +17,13 @@ function index() {
     <React.Fragment>
       <Header />
       <CenterLayout>
-        <Description />
         <Cases />
+        <Description />
         <Hospital />
         <News />
         <Summary />
         <GrowthCases />
+        <DailyReport />
         <Genders />
         <Age />
       </CenterLayout>

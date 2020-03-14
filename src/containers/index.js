@@ -8,3 +8,4 @@ export { default as GrowthCases } from "./growthCases";
 export { default as Genders } from "./genders";
 export { default as Age } from "./age";
 export { default as Hospital } from "./hospital";
+export { default as DailyReport } from "./dailiyReport";

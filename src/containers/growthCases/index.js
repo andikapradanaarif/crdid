@@ -36,6 +36,12 @@ const Index = () => {
           firstDate.setDate(firstDate.getDate() + 1);
           return `${firstDate.getDate()}/${firstDate.getMonth() + 1}/20`;
         })
+      },
+      dataLabels: {
+        enabled: true
+      },
+      stroke: {
+        curve: "smooth"
       }
     };
     const series = [
