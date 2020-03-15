@@ -12,9 +12,10 @@ const Index = () => {
           Info<strong>Corona</strong> Indonesia
         </h1>
         <div className="container_header_menus">
-          <a href="#description">Apa itu Covid-19</a>
-          <a href="#refferalHospitals">Rumah Sakit Rujukan</a>
-          <a href="#news">Berita Terbaru</a>
+          <a href="#description">Covid-19</a>
+          <a href="#refferalHospitals">Rumah Sakit</a>
+          <a href="#news">Berita</a>
+          <a href="#summary">Summary</a>
         </div>
       </CenterLayout>
     </HeaderWrapper>

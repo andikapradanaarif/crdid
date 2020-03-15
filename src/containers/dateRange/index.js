@@ -17,14 +17,14 @@ const Index = props => {
   console.log(new Date().getDate() + 1);
   return (
     <DateRangeWrapper>
-      <Wrapper>
+      {/* <Wrapper>
         <Text.Header>
           <div>Rentang Waktu</div>
-        </Text.Header>
-        {/* <div className="container_dateRange_wrapper"> */}
-        {/* <Slider range defaultValue={[0, 100]} /> */}
-        {/* </div> */}
-      </Wrapper>
+        </Text.Header> */}
+      {/* <div className="container_dateRange_wrapper"> */}
+      {/* <Slider range defaultValue={[0, 100]} /> */}
+      {/* </div> */}
+      {/* </Wrapper> */}
       {childrenComponent}
     </DateRangeWrapper>
   );

@@ -14,7 +14,6 @@ const Index = () => {
   }, []);
 
   if (patient.length > 0) {
-    console.log(patient);
     const dataPatient = patient.reverse();
     const genders = ["-", "Wanita", "Pria"];
     const transmission = ["-", "lokal", "imported"];
@@ -80,7 +79,7 @@ const Index = () => {
     return (
       <SummaryWrapper>
         <Wrapper>
-          <Text.Header>Summary</Text.Header>
+          <Text.Header id="summary">Summary</Text.Header>
           <Table
             columns={columns}
             dataSource={dataPatient}

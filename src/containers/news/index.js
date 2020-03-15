@@ -8,9 +8,12 @@ import { TimeFormatter } from "../../utils/timeParser";
 const Index = () => {
   const [isShowAll, setIsShowAll] = useState(false);
   const [logNews, setLogNews] = useState([]);
+
   useEffect(() => {
-    setLogNews(isShowAll ? data : data.reverse().slice(0, 5));
+    if (logNews.length > 0) setLogNews(isShowAll ? data : data.slice(0, 5));
+    else setLogNews(data.reverse().slice(0, 5));
   }, [isShowAll]);
+
   const timeLineItemsRendered = logNews.map((item, i) => {
     const timeFormatted = TimeFormatter(item.date);
     const dateFormatted = `${timeFormatted.dayName}, ${timeFormatted.date} ${timeFormatted.monthName} ${timeFormatted.year}`;
@@ -41,11 +44,7 @@ const Index = () => {
         </div>
         <div className="container_button_wrapper">
           <Button
-            text={
-              isShowAll
-                ? "Tampilkan Lebih Sedikit ..."
-                : "Tampilkan Lebih Banyak ..."
-            }
+            text={isShowAll ? "Sembunyikan" : "Tampilkan Semua"}
             onClick={() => setIsShowAll(!isShowAll)}
           />
         </div>

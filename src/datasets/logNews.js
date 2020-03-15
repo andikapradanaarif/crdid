@@ -142,6 +142,35 @@ const logNews = [
           "https://www.idntimes.com/news/indonesia/aldzah-fatimah-aditya/breaking-1-pasien-positif-covid-19-melarikan-diri-dari-isolasi-rs-persahabatan/"
       }
     ]
+  },
+  {
+    date: "2020-03-14T15:54:35.205Z",
+    activity: [
+      {
+        title: "Update Corona 14 Maret: 96 Positif, 5 Meninggal, 8 Sembuh",
+        url:
+          "https://www.cnnindonesia.com/nasional/20200314160309-20-483417/update-corona-14-maret-96-positif-5-meninggal-8-sembuh"
+      },
+      {
+        title: "Menhub Budi Karya Sumadi Positif Corona",
+        url:
+          "https://nasional.kompas.com/read/2020/03/14/20580251/breaking-news-menhub-budi-karya-sumadi-positif-corona"
+      }
+    ]
+  },
+  {
+    date: "2020-03-15T15:54:35.205Z",
+    activity: [
+      {
+        title: "21 Kasus Baru, Pasien Positif Corona Indonesia Jadi 117 Orang",
+        url:
+          "https://www.cnnindonesia.com/nasional/20200315133445-20-483573/21-kasus-baru-pasien-positif-corona-indonesia-jadi-117-orang"
+      },
+      {
+        title: "Jokowi Imbau Masyarakat Bekerja, Belajar dan Ibadah di Rumah",
+        url: "https://www.youtube.com/watch?v=xB1_Wfbd97s"
+      }
+    ]
   }
 ];
 

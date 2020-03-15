@@ -26,9 +26,18 @@ export const HeaderWrapper = styled.div`
     align-items: center;
   }
 
-  .container_header_menus a {
-    color: var(--white);
-    margin-right: 15px;
-    display: inline-block;
+  .container_header_menus {
+    a {
+      padding: 0px 5px;
+
+      padding-bottom: 5px;
+      color: var(--white);
+      margin-right: 15px;
+      display: inline-block;
+      font-weight: 500;
+    }
+    a:hover {
+      border-bottom: 3px solid #fff;
+    }
   }
 `;
