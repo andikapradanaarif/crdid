@@ -12,15 +12,30 @@ const Index = () => {
       setPatient(data);
     });
   }, []);
+
   if (patient.length > 0) {
+    console.log(patient);
     const dataPatient = patient.reverse();
     const genders = ["-", "Wanita", "Pria"];
+    const transmission = ["-", "lokal", "imported"];
     const columns = [
       {
         title: "Kasus",
         dataIndex: "id",
         key: "id",
         render: text => "#" + text
+      },
+
+      {
+        title: "Usia",
+        dataIndex: "age",
+        key: "age"
+      },
+      {
+        title: "Gender",
+        dataIndex: "sex",
+        key: "sex",
+        render: text => genders[text]
       },
       {
         title: "Tanggal",
@@ -35,22 +50,19 @@ const Index = () => {
         sortDirections: ["descend"]
       },
       {
-        title: "Usia",
-        dataIndex: "age",
-        key: "age"
-      },
-      {
-        title: "Gender",
-        dataIndex: "sex",
-        key: "sex",
-        render: text => genders[text]
-      },
-      {
         title: "Kota",
         dataIndex: "city",
         sorter: (a, b) => a.time - b.time,
         key: "city",
         sortDirections: ["descend"]
+      },
+      {
+        title: "Penyebaran",
+        dataIndex: "transmission",
+        sorter: (a, b) => a.time - b.time,
+        key: "transmission",
+        sortDirections: ["descend"],
+        render: text => transmission[text]
       },
       {
         title: "Sumber",
