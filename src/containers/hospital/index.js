@@ -65,7 +65,7 @@ const Index = () => {
   return (
     <SummaryWrapper>
       <Wrapper>
-        <Text.Header>Rumah Sakit Rujukan</Text.Header>
+        <Text.Header id="refferalHospitals">Rumah Sakit Rujukan</Text.Header>
         <div className="container_hospital_content">
           <div className="container_hospital_word">
             <p>

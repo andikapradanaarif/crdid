@@ -9,3 +9,4 @@ export { default as Genders } from "./genders";
 export { default as Age } from "./age";
 export { default as Hospital } from "./hospital";
 export { default as DailyReport } from "./dailiyReport";
+export { default as DateRange } from "./dateRange";

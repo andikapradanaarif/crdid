@@ -7,7 +7,7 @@ const Index = () => {
     <DescriptionWrapper>
       <Wrapper>
         <h3>
-          <strong>Virus Corona (COVID-19)</strong>
+          <strong id="description">Virus Corona (COVID-19)</strong>
         </h3>
         <p>
           adalah virus yang menyerang sistem pernapasan. Penyakit karena infeksi

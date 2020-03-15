@@ -106,7 +106,7 @@ const Index = () => {
     return (
       <SummaryWrapper>
         <Wrapper>
-          <Text.Header>Grafik Harian Kasus</Text.Header>
+          <Text.Header>Grafik Kasus Harian</Text.Header>
           <Chart options={options} series={series} type="bar" height={300} />
         </Wrapper>
       </SummaryWrapper>

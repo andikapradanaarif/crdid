@@ -8,7 +8,8 @@ import {
   GrowthCases,
   DailyReport,
   Genders,
-  Age
+  Age,
+  DateRange
 } from "../../containers";
 import { CenterLayout, Header, FreeSpace, Footer } from "../../components";
 
@@ -24,8 +25,10 @@ function index() {
         <Summary />
         <GrowthCases />
         <DailyReport />
-        <Genders />
-        <Age />
+        <DateRange>
+          <Genders />
+          <Age />
+        </DateRange>
       </CenterLayout>
       <FreeSpace />
       <Footer />
