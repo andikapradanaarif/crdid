@@ -29,4 +29,13 @@ export const LatestUpdateWrapper = styled.div`
       margin-bottom: 3px;
     }
   }
+
+  .container_button_wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container_button_wrapper .button__text {
+    color: var(--primary);
+  }
 `;

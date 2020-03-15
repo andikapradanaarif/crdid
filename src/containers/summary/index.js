@@ -75,8 +75,6 @@ const Index = () => {
             size={"middle"}
             rowKey={record => record.id}
             scroll={{ x: "max-content" }}
-
-            // pagination={false}
           />
         </Wrapper>
       </SummaryWrapper>

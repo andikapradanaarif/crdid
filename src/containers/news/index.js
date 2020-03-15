@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { LatestUpdateWrapper } from "./style";
-import { Text, Wrapper } from "../../components";
+import { Text, Wrapper, Button } from "../../components";
 import { Timeline } from "antd";
 import data from "../../datasets/logNews";
 import { TimeFormatter } from "../../utils/timeParser";
 
 const Index = () => {
-  const logNews = data.reverse();
+  const [isShowAll, setIsShowAll] = useState(false);
+  const [logNews, setLogNews] = useState([]);
+  useEffect(() => {
+    setLogNews(isShowAll ? data : data.reverse().slice(0, 5));
+  }, [isShowAll]);
   const timeLineItemsRendered = logNews.map((item, i) => {
     const timeFormatted = TimeFormatter(item.date);
     const dateFormatted = `${timeFormatted.dayName}, ${timeFormatted.date} ${timeFormatted.monthName} ${timeFormatted.year}`;
@@ -31,9 +35,19 @@ const Index = () => {
   return (
     <LatestUpdateWrapper>
       <Wrapper>
-        <Text.Header>Berita Terbaru </Text.Header>
+        <Text.Header id="news">Berita Terbaru </Text.Header>
         <div className="container_content">
           <Timeline>{timeLineItemsRendered}</Timeline>
+        </div>
+        <div className="container_button_wrapper">
+          <Button
+            text={
+              isShowAll
+                ? "Tampilkan Lebih Sedikit ..."
+                : "Tampilkan Lebih Banyak ..."
+            }
+            onClick={() => setIsShowAll(!isShowAll)}
+          />
         </div>
       </Wrapper>
     </LatestUpdateWrapper>

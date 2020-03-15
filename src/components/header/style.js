@@ -18,4 +18,17 @@ export const HeaderWrapper = styled.div`
   strong {
     color: var(--white);
   }
+
+  .container_header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container_header_menus a {
+    color: var(--white);
+    margin-right: 15px;
+    display: inline-block;
+  }
 `;
