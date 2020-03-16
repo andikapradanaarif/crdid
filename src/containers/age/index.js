@@ -5,14 +5,18 @@ import Chart from "react-apexcharts";
 import { csv } from "d3-fetch";
 // male = 2 , female = 1 , unknown 0
 const Index = () => {
-  const [patient, setPatient] = useState([]);
+  const [patientRaw, setPatient] = useState([]);
 
   useEffect(() => {
     csv("/data/patient.csv").then(data => {
       setPatient(data);
     });
   }, []);
-  if (patient.length > 0) {
+  if (patientRaw.length > 0) {
+    const patient = patientRaw.filter(item => {
+      return item.age !== "-";
+    });
+    console.log(patient);
     const agePatients = [
       ...new Set(patient.map(item => Math.floor(item.age / 10)))
     ].sort();
@@ -39,12 +43,10 @@ const Index = () => {
         render: text => `${text}0-${text}9 tahun`
       },
       {
-        title: "Persentase",
+        title: "Total",
         dataIndex: "total",
         key: "total",
-        render: text => (
-          <strong>{((text / patient.length) * 100).toFixed(1) + " %"}</strong>
-        )
+        render: text => <strong>{text + " Orang"}</strong>
       }
     ];
     const series = patients.map(item => item.total);

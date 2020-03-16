@@ -12,6 +12,7 @@ const Index = () => {
   useEffect(() => {
     if (logNews.length > 0) setLogNews(isShowAll ? data : data.slice(0, 5));
     else setLogNews(data.reverse().slice(0, 5));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isShowAll]);
 
   const timeLineItemsRendered = logNews.map((item, i) => {

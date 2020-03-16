@@ -25,7 +25,7 @@ const Index = props => {
     const unknown = patient.filter(i => {
       return i.sex === "0";
     }).length;
-
+    // const total = male + female + unknown;
     const patients = [
       {
         id: 1,
@@ -57,12 +57,10 @@ const Index = props => {
         render: text => genders[text]
       },
       {
-        title: "Persentase",
+        title: "Total",
         dataIndex: "total",
         key: "total",
-        render: text => (
-          <strong>{((text / patient.length) * 100).toFixed(1) + " %"}</strong>
-        )
+        render: text => <strong>{text + " Orang"}</strong>
       }
     ];
     const series = patients.map(item => item.total);
