@@ -23,8 +23,15 @@ function index() {
           name="description"
           content="Informasi terkini terkait virus corona dan penyebarannya di Indonesia"
         />
+        <meta
+          property="og:description"
+          content="Informasi terkini terkait virus corona dan penyebarannya di Indonesia"
+        />
         <meta property="og:title" content="InfoCorona Indonesia" />
-        <meta property="og:image" content="/logo.jpg" />
+        <meta
+          property="og:image"
+          content="https://photos.google.com/search/_tra_/photo/AF1QipMa9Jq6nVeTO8eTnD5hsz8xOR9_iI2zHB0dW7oe"
+        />
       </MetaTags>
       <Header />
       <CenterLayout>
