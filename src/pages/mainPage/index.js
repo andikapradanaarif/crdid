@@ -12,10 +12,20 @@ import {
   DateRange
 } from "../../containers";
 import { CenterLayout, Header, FreeSpace, Footer } from "../../components";
+import MetaTags from "react-meta-tags";
 
 function index() {
   return (
-    <React.Fragment>
+    <div>
+      <MetaTags>
+        <title>InfoCorona indonesia</title>
+        <meta
+          name="description"
+          content="Informasi terkini terkait virus corona dan penyebarannya di Indonesia"
+        />
+        <meta property="og:title" content="InfoCorona Indonesia" />
+        <meta property="og:image" content="/logo.jpg" />
+      </MetaTags>
       <Header />
       <CenterLayout>
         <Cases />
@@ -32,7 +42,7 @@ function index() {
       </CenterLayout>
       <FreeSpace />
       <Footer />
-    </React.Fragment>
+    </div>
   );
 }
 

@@ -24,6 +24,7 @@ export const FooterWrapper = styled.div`
       img {
         height: 35px;
         margin-right: 10px;
+      }
     }
   }
 `;

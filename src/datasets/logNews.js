@@ -171,6 +171,17 @@ const logNews = [
         url: "https://www.youtube.com/watch?v=xB1_Wfbd97s"
       }
     ]
+  },
+  {
+    date: "2020-03-16T15:54:35.205Z",
+    activity: [
+      {
+        title: "Kasus Positif Corona Bertambah 17 orang, Total 134 Pasien",
+        desc: `Penambahan kasus sebanyak 17. Rinciannya, Jawa Barat 1, Banten 1, Jateng 1 dan DKI 14 pasien," demikian disampaikan oleh Juru Bicara Pemerintah untuk Covid-19 Achmad Yurianto`,
+        url:
+          "https://www.cnbcindonesia.com/news/20200316165218-4-145275/alert-ada-17-lagi-tambahan-positif-corona-total-134-pasien"
+      }
+    ]
   }
 ];
 
