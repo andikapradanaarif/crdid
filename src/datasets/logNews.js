@@ -163,6 +163,8 @@ const logNews = [
     activity: [
       {
         title: "21 Kasus Baru, Pasien Positif Corona Indonesia Jadi 117 Orang",
+        desc: `"19 orang di Jakarta dan 2 di Jawa Tengah," kata Yurianto kepada wartawan, Minggu (15/3).`,
+
         url:
           "https://www.cnnindonesia.com/nasional/20200315133445-20-483573/21-kasus-baru-pasien-positif-corona-indonesia-jadi-117-orang"
       },
@@ -180,9 +182,14 @@ const logNews = [
         desc: `Penambahan kasus sebanyak 17. Rinciannya, Jawa Barat 1, Banten 1, Jateng 1 dan DKI 14 pasien," demikian disampaikan oleh Juru Bicara Pemerintah untuk Covid-19 Achmad Yurianto`,
         url:
           "https://www.cnbcindonesia.com/news/20200316165218-4-145275/alert-ada-17-lagi-tambahan-positif-corona-total-134-pasien"
+      },
+      {
+        title:
+          "Kemenkes: Sekarang Pasien Positif Corona Bisa Diisolasi Mandiri di Rumah",
+        url:
+          "https://news.detik.com/berita/d-4941325/kemenkes-sekarang-pasien-positif-corona-bisa-diisolasi-mandiri-di-rumah"
       }
     ]
   }
 ];
-
 export default logNews;
