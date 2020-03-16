@@ -12,17 +12,18 @@ export const FooterWrapper = styled.div`
         font-size: 14px;
       }
       img {
-        height: 35px;
-        margin-right: 10px;
+        height: 40px;
+        margin-right: 15px;
         margin-bottom: 15px;
       }
     }
     .component_footer_right {
       p {
-        text-align: right;
-        font-size: 16px;
-        font-weight: 600px;
+        font-size: 14px;
       }
+      img {
+        height: 35px;
+        margin-right: 10px;
     }
   }
 `;

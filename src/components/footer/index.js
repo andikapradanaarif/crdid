@@ -51,19 +51,18 @@ const Index = () => {
               {support.map(people => {
                 return <ImageLink people={people} />;
               })}
+            </div>
+
+            <div className="component_footer_right">
               <p>Contributor:</p>
               {contributor.map(people => {
                 return <ImageLink people={people} />;
               })}
             </div>
-
-            <div className="component_footer_right">
-              <p>information and support, email us infocorona.id@gmail.com</p>
-            </div>
             {/* <img alt="contributor" src={contributor} />
             <p>Supported By:</p> */}
           </RowWrapper>
-          <RowWrapper></RowWrapper>
+          <p>information and support, email us infocorona.id@gmail.com</p>
         </CenterLayout>
       </div>
     </FooterWrapper>
