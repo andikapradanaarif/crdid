@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { SummaryWrapper } from "./style";
 import { Text, Wrapper } from "../../components";
 import Chart from "react-apexcharts";
-import ApexCharts from "apexcharts";
 import { csv } from "d3-fetch";
 
 const Index = () => {
