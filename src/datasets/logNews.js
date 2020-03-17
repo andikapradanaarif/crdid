@@ -190,6 +190,17 @@ const logNews = [
           "https://news.detik.com/berita/d-4941325/kemenkes-sekarang-pasien-positif-corona-bisa-diisolasi-mandiri-di-rumah"
       }
     ]
+  },
+  {
+    date: "2020-03-17T15:54:35.205Z",
+    activity: [
+      {
+        title:
+          "Juru bicara penanganan virus Corona , Achmad Yurianto, mengkonfirmasi ada RS menolak pasien corona",
+        desc: `"Kita sadari betul bahwa beberapa rumah sakit, dia ingin jaga citranya jangan sampai ketahuan bahwa mereka sedang merawat pasien COVID-19. Kalau ketahuan, pasien lain nanti nggak mau dateng. this is business. Itu yang terjadi, Banyak sekali rumah sakit yang menolak kasus ini." tutur Yuri.`,
+        url: "https://youtu.be/yX1rIKgdnNk?t=49"
+      }
+    ]
   }
 ];
 export default logNews;

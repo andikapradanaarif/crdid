@@ -19,6 +19,9 @@ export const LatestUpdateWrapper = styled.div`
   .container_title {
     text-transform: capitalize;
   }
+  .container_title:hover {
+    color: var(--primary);
+  }
 
   .container_status {
     margin-top: 5px;
