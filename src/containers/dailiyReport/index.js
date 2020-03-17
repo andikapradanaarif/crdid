@@ -2,16 +2,37 @@ import React, { useState, useEffect } from "react";
 import { SummaryWrapper } from "./style";
 import { Text, Wrapper } from "../../components";
 import Chart from "react-apexcharts";
+import ApexCharts from "apexcharts";
 import { csv } from "d3-fetch";
 
 const Index = () => {
   const [cases, setCases] = useState([]);
+
+  const [active, setActive] = useState(0);
+  const option = ["Kasus Baru", "Sembuh", "Kematian"];
+  const color = ["#117899", "#47B39C", "#f95d6a"];
 
   useEffect(() => {
     csv("/data/logCase.csv").then(data => {
       setCases(data);
     });
   }, []);
+
+  const optionMapped = option.map((item, id) => {
+    return (
+      <div
+        key={id}
+        onClick={() => setActive(id)}
+        className={
+          "container_dailyReport_option " +
+          (active === id && "container_dailyReport_optionActive")
+        }
+      >
+        {" "}
+        {item}
+      </div>
+    );
+  });
 
   if (cases.length > 0) {
     const sortedDate = cases.sort((a, b) => {
@@ -45,7 +66,7 @@ const Index = () => {
           return `${firstDate.getDate()}/${firstDate.getMonth() + 1}/20`;
         })
       },
-      colors: ["#117899", "#47B39C", "#f95d6a"]
+      colors: [color[active]]
     };
     const series = [
       {
@@ -67,7 +88,7 @@ const Index = () => {
         })
       },
       {
-        name: "sembuh",
+        name: "Sembuh",
         data: listDate.map((i, id) => {
           let newDate = new Date(cases?.[recoverIndex]?.date);
           //console.log(i, newDate, dataIndex);
@@ -107,7 +128,13 @@ const Index = () => {
       <SummaryWrapper>
         <Wrapper>
           <Text.Header>Grafik Kasus Harian</Text.Header>
-          <Chart options={options} series={series} type="bar" height={300} />
+          {optionMapped}
+          <Chart
+            options={options}
+            series={[series[active]]}
+            type="bar"
+            height={300}
+          />
         </Wrapper>
       </SummaryWrapper>
     );
