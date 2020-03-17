@@ -206,6 +206,12 @@ const logNews = [
         desc: `"Perpanjangan Status Keadaan Tertentu sebagaimana dimaksud dalam diktum KESATU berlaku selama 91 (sembilan puluh satu) hari, terhitung sejak tanggal 29 Februari 2020 sampai dengan tanggal 29 Mei 2020," demikian bunyi putusan BNPB yang diteken Kepala BNPB Doni Monardo dalam surat keputusan yang diterima wartawan, Selasa (17/3/2020)`,
         url:
           "https://news.detik.com/berita/d-4942327/pemerintah-tetapkan-masa-darurat-bencana-corona-hingga-29-mei-2020"
+      },
+      {
+        title: "Jumlah Pasien Positif Corona Bertambah Jadi 172 Orang",
+        desc: `"penambahan terbanyak dari wilayah DKI Jakarta, Jawa Timur, Jawa Tengah dan Kepulauan Riau." kata Yurianto dalam konferensi pers di Kantor BNPB, Selasa (17/3).`,
+        url:
+          "https://www.cnnindonesia.com/nasional/20200317154315-20-484247/jumlah-pasien-positif-corona-bertambah-jadi-172-orang"
       }
     ]
   }
