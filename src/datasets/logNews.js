@@ -199,6 +199,13 @@ const logNews = [
           "Juru bicara penanganan virus Corona , Achmad Yurianto, mengkonfirmasi ada RS menolak pasien corona",
         desc: `"Kita sadari betul bahwa beberapa rumah sakit, dia ingin jaga citranya jangan sampai ketahuan bahwa mereka sedang merawat pasien COVID-19. Kalau ketahuan, pasien lain nanti nggak mau dateng. this is business. Itu yang terjadi, Banyak sekali rumah sakit yang menolak kasus ini." tutur Yuri.`,
         url: "https://youtu.be/yX1rIKgdnNk?t=49"
+      },
+      {
+        title:
+          "Pemerintah Tetapkan Masa Darurat Bencana Corona hingga 29 Mei 2020",
+        desc: `"Perpanjangan Status Keadaan Tertentu sebagaimana dimaksud dalam diktum KESATU berlaku selama 91 (sembilan puluh satu) hari, terhitung sejak tanggal 29 Februari 2020 sampai dengan tanggal 29 Mei 2020," demikian bunyi putusan BNPB yang diteken Kepala BNPB Doni Monardo dalam surat keputusan yang diterima wartawan, Selasa (17/3/2020)`,
+        url:
+          "https://news.detik.com/berita/d-4942327/pemerintah-tetapkan-masa-darurat-bencana-corona-hingga-29-mei-2020"
       }
     ]
   }
